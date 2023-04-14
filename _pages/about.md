@@ -13,3 +13,4 @@ I am a Research Fellow at the Centre for Water Systems, University of Exeter, wh
 Prior to joining the Centre for Water Systems, I spent 25 years in the video games industry, working primarily as a technologist in AAA, indie and start-up studios and as an academic working for Goldsmiths, Westminster, and Falmouth Universities, where I taught technical game development and project management.
  
 I have an MBA from the Open University, an MSc in Data Science and a Postgraduate Certificate in Higher Education.
+
