@@ -3,8 +3,7 @@ title: "Developing synthetic data for FIWARE-enabled Digital Twins in the water 
 collection: talks
 type: "Talk"
 date: 2023-10-01
-permalink: files/cemepe23/cemepe23-193
 venue: "CEMEPE"
 ---
 
-[More information here](https://glewis-unexe.github.io/files/cemepe23/cemepe23-222.pdf)
+[More information here](https://glewis-unexe.github.io/files/cemepe23/cemepe23-193.pdf)
