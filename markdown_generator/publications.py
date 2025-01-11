@@ -34,7 +34,7 @@ import pandas as pd
 
 # In[3]:
 
-publications = pd.read_csv("publications.tsv", sep="\t", header=0)
+publications = pd.read_csv("academic-pages - publications.tsv", sep="\t", header=0)
 publications
 
 
@@ -72,7 +72,9 @@ for row, item in publications.iterrows():
     
     md = "---\ntitle: \""   + item.title + '"\n'
     
-    md += """collection: publications"""
+    md += """collection: publications""" + '"\n'
+
+    md += """category: """ + item.category
     
     md += """\npermalink: /publication/""" + html_filename
     
@@ -93,12 +95,16 @@ for row, item in publications.iterrows():
     ## Markdown description for individual page
     
     if len(str(item.paper_url)) > 5:
-        md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>\n" 
+        md += "\n\n<a href='" + item.paper_url + "'>Go to paper</a>\n"
         
     if len(str(item.excerpt)) > 5:
         md += "\n" + html_escape(item.excerpt) + "\n"
         
     md += "\nRecommended citation: " + item.citation
+
+
+    if isinstance(item.slides_url, str):
+        md += "\n\n<a href='" + item.slides_url + "'>Go to presentation</a>\n"
     
     md_filename = os.path.basename(md_filename)
        
